@@ -9,10 +9,8 @@
 }
 
 html {
-    font-family: 'Aleo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.69445vw;
-    /* 2rem = 20px;  .2rem = 2px*/
-    /* 10/(1440/100) */
     font-style: normal;
     font-weight: normal;
     -webkit-animation: bugfix infinite 1s;
@@ -130,9 +128,4 @@ kbd,
 samp {
     font-family: monospace, monospace;
     font-size: inherit;
-}
-
-.container {
-    width: 120.2rem;
-    margin: 0 auto;
 }

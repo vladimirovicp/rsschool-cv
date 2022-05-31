@@ -6,29 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/default-style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h1>Petr Tokmachev</h1>
+        <h1 class="header__title">Petr Tokmachev</h1>
     </header>
 
-    <main class="main">
 
-        <section class="brief">
-            <h2 class="title">
-                Brief Information
-            </h2>
-            <p class="text">
-                Top performing IT professional with 5 years’ successful experience in Information Technology field. Proficient in hardware and software maintenance. Solid track record of providing the timely positive response to requests regarding computer-related assistance. A deep understanding of the general organizational confidentiality policies associated with IT specialist position.
-            </p>
-        </section>
+    <div class="container">
 
-    </main>
+        <aside class="menu">
+            <div class="wrapper menu__wrapper">
+                <div class="menu__logo">
+                    <img src="./img/logo.png" alt="Логотип vladimirovicp">
+                </div>
+                <nav class="munu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item item"><a href="#" class="menu__link">Brief</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link">Education</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link">Skills</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link">Projects</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link">Code</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
 
-    <footer class="footer"></footer>
+            </div>
+            <section class="contacts">
+                <h2 class="title">Contacts for communication</h2>
+                <ul>
+                    <li><span class="text information__text"><span class="bold-text">Email:</span> vladimirovicp70@gmail.com</span></li>
+                    <li><span class="text information__text"><span class="bold-text">Git:</span> https://github.com/vladimirovicp</span></li>
+                </ul>
+            </section>
+
+        </aside>
+        <main class="main">
+            <section class="brief">
+                <h2 class="title">
+                    Brief Information
+                </h2>
+                <p class="text">
+                    Top performing IT professional with 5 years’ successful experience in Information Technology field. Proficient in hardware and software maintenance. Solid track record of providing the timely positive response to requests regarding computer-related assistance. A deep understanding of the general organizational confidentiality policies associated with IT specialist position.
+                </p>
+            </section>
+            <section class="information">
+                <h2 class="title">Information about education and level of English</h2>
+                <ul>
+                    <li><span class="text information__text"><span class="bold-text">About education:</span> Higher education</span></li>
+                    <li><span class="text information__text"><span class="bold-text">English language:</span> Skills missing</span></li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2 class="title">Skills</h2>
+                <ul class="skills__list text disc">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>js</li>
+                    <li>php</li>
+                    <li>dart</li>
+                    <li>figms</li>
+                    <li>photoshop</li>
+                </ul>
+
+            </section>
+            <section class="projects">
+                <h2 class="title">List of completed training projects</h2>
+                <ul class="projects__list text disc">
+                    <li>CV # 1. Markdown & Git</li>
+                    <li>CV # 2. Basics of HTML, CSS and Git</li>
+                </ul>
+            </section>
+
+            <section class="code">
+                <h2 class="title">Sample code</h2>
+                <pre>
+                    <code class="text">
+    function repeatStr (n, s) {
+                        let rezult ='';
+                        for(let i = 0; i < n; i++){
+                        rezult = rezult + s;
+                        }
+                        return rezult;
+                    }
+                    </code>
+                </pre>
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <small>&copy; Copyright 2022</small>
+    </footer>
 
 </body>
 

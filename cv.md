@@ -1,10 +1,13 @@
-**Name and surname** Petr Tokmachev<br>
-**email** vladimirovicp70@gmail.com<br>
-**brief information** Studying at rolling scopes school<br>
-**Skills** html, css, js, php, dart<br>
-**English language** Skills missing<br>
+# Petr Tokmachev
+
+> * **Name and surname**  Petr Tokmachev 
+> * **email** vladimirovicp70@gmail.com
+> * **brief information** Studying at rolling scopes school
+> * **Skills** html, css, js, php, dart
+> * **English language** Skills missing
+
 ---
-![stack Overflow](http://risovach.ru/upload/2014/12/generator/znayka_68045037_orig_.png)
+<img src="http://risovach.ru/upload/2014/12/generator/znayka_68045037_orig_.png" alt="Лого" width="250"/>
 ---
 
 ##String repeat

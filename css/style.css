@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #001F4B;
@@ -16,9 +19,38 @@ a:hover{
     color: #69CEF4;
 }
 
+.page-portfolio section{
+    border-left: .1rem solid transparent;
+    transition: border 0.7s linear;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.page-portfolio section.active::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: .2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #69CEF4);
+    animation: animateLine 1s ease-in-out;
+}
+
 .page-portfolio section.active{
     border-left: .1rem solid #69CEF4;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 .4rem .4rem rgba(0, 0, 0, 0.25));
+}
+
+@keyframes animateLine {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
 }
 
 .container {
@@ -38,7 +70,7 @@ a:hover{
     line-height: 1.17;
     letter-spacing: 0.05em;
     margin-bottom: 1.5rem;
-    transition: color 0.5s;
+    /*transition: color 0.5s;*/
 }
 
 .active .title{
@@ -138,12 +170,32 @@ a:hover{
 }
 
 .skills__list{
-    /*display: flex;*/
-    /*justify-content: space-between;*/
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 38.7rem;
+}
+
+.skills__skill{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skills__img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.skills__text{
+    margin-left: 2.5rem;
+    text-transform: capitalize;
 }
 
 .code__wrapper{
-    border: 1px solid #69CEF4;
+    border: .1rem solid #69CEF4;
     padding: 3rem 7.5rem;
 
 }
@@ -155,11 +207,10 @@ a:hover{
 }
 
 .contacts{
-    padding-top: 4rem;
+    margin-top: 4rem;
 }
 
 .footer{
     border-top: 3px solid rgba(105, 206, 244, 0.05);
     height: 6rem;
 }
-

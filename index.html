@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="./css/default-style.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     </header>
 
 
-    <div class="container">
+    <div class="container page-portfolio">
 
         <aside class="menu">
             <div class="wrapper menu__wrapper">
@@ -29,12 +31,12 @@
                 </div>
                 <nav class="munu__nav">
                     <ul class="menu__list">
-                        <li class="menu__item item"><a href="#" class="menu__link">Brief</a></li>
-                        <li class="menu__item item"><a href="#" class="menu__link">Education</a></li>
-                        <li class="menu__item item"><a href="#" class="menu__link">Skills</a></li>
-                        <li class="menu__item item"><a href="#" class="menu__link">Projects</a></li>
-                        <li class="menu__item item"><a href="#" class="menu__link">Code</a></li>
-                        <li class="menu__item item"><a href="#" class="menu__link">Contacts</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="brief">Brief</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="education">Education</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="skills">Skills</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="projects">Projects</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="code">Code</a></li>
+                        <li class="menu__item item"><a href="#" class="menu__link" data-goto="contacts">Contacts</a></li>
                     </ul>
                 </nav>
 
@@ -49,7 +51,7 @@
 
         </aside>
         <main class="main">
-            <section class="brief">
+            <section class="brief active">
                 <h2 class="title">
                     Brief Information
                 </h2>
@@ -87,17 +89,20 @@
 
             <section class="code">
                 <h2 class="title">Sample code</h2>
-                <pre>
+                <div class="code__wrapper">
+                 <pre>
                     <code class="text">
-    function repeatStr (n, s) {
-                        let rezult ='';
-                        for(let i = 0; i < n; i++){
-                        rezult = rezult + s;
-                        }
-                        return rezult;
+function repeatStr (n, s) {
+                    let rezult ='';
+                    for(let i = 0; i < n; i++){
+                    rezult = rezult + s;
                     }
+                    return rezult;
+                }
                     </code>
                 </pre>
+                </div>
+
             </section>
 
         </main>

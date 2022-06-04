@@ -19,6 +19,103 @@ a:hover{
     color: #69CEF4;
 }
 
+
+/* ----------------------------------------------- */
+
+/* https://codepen.io/ahmadbassamemran/pen/VQwPGr */
+
+.menu__icon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .1s;
+    margin: 10px 10px;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+.menu__icon span{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.menu__icon:hover span{
+    transform: scale(1.2);
+    transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+  }
+  .menu__icon span:nth-child(1){
+    left: 0;
+    top: 0;
+  }
+  .menu__icon span:nth-child(2){
+    left: 12px;
+    top: 0;
+  }
+  .menu__icon span:nth-child(3){
+    right: 0;
+    top: 0;
+  }
+  .menu__icon span:nth-child(4){
+    left: 0;
+    top: 12px;
+  }
+  .menu__icon span:nth-child(5){
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  .menu__icon span:nth-child(6){
+    right: 0px;
+    top: 12px;
+  }
+  .menu__icon span:nth-child(7){
+    left: 0px;
+    bottom: 0px;
+  }
+  .menu__icon span:nth-child(8){
+    position: absolute;
+    left: 12px;
+    bottom: 0px;
+  }
+  .menu__icon span:nth-child(9){
+    right: 0px;
+    bottom: 0px;
+  }
+  .menu__icon.open{
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+  }
+  .menu__icon.open span{
+    border-radius: 50%;
+    transition-delay: 200ms;
+    transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+  }
+  .menu__icon.open span:nth-child(2) {
+    left: 6px;
+    top: 6px;
+  }
+  .menu__icon.open span:nth-child(4) {
+    left: 6px;
+    top: 18px;
+  }
+  .menu__icon.open span:nth-child(6) {
+    right: 6px;
+    top: 6px;
+  }
+  .menu__icon.open span:nth-child(8) {
+    left: 18px;
+    bottom: 6px;
+  }
+
+
+
+/* --------------------------------- */
+
 .page-portfolio section{
     border-left: .1rem solid transparent;
     transition: border 0.7s linear;
@@ -126,11 +223,6 @@ a:hover{
     /*padding-bottom: 4rem;*/
 }
 
-.menu__logo{
-    width: 35.8rem;
-    height: 61.8rem;
-}
-
 .menu__list{
     display: flex;
     flex-direction: column;
@@ -165,9 +257,9 @@ a:hover{
     color: #69CEF4
 }
 
-.main{
+/* .main{
     padding-left: 15.7rem;
-}
+} */
 
 .information__text{
     padding-bottom: 1rem;
@@ -220,11 +312,13 @@ a:hover{
 }
 
 .footer .container{
-    padding: 1.4rem 0;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
 }
 
 .footer__links{
     display:  flex;
+    align-items: center;
 }
 
 .footer__links li:not(:last-child){
@@ -245,4 +339,76 @@ a:hover{
 .rs-icon{
     width: 8.3rem;
     height: 3.3rem;
+}
+
+
+@media (max-width: 80em) {
+    html {
+        font-size: 0.765vw;
+    }
+}
+
+@media (min-width: 48em) {
+    .menu__logo{
+        width: 35.8rem;
+        height: 61.8rem;
+    }
+    .main {
+        padding-left: 15.7rem;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 1.5625vw;
+    }
+
+    .container {
+        padding: 0 4rem;
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.7rem;
+    }
+
+    .header__title{
+        font-size: 4.8rem;
+    }
+
+    .page-portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__wrapper{
+        display: none;
+    }
+
+    .menu{ order:1;}
+    .main{ order:0;}
+
+
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright{
+        margin-bottom: 1.4rem;
+    }
+
+    .git-icon{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .rs-icon {
+        width: 12.4rem;
+        height: 4.95rem;
+    }
+
+
+
 }

@@ -7,6 +7,10 @@ body {
     color: #fff;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 section{
     margin-bottom: 4rem;
     padding-left: 1.5rem;
@@ -25,19 +29,20 @@ a:hover{
 /* https://codepen.io/ahmadbassamemran/pen/VQwPGr */
 
 .menu__icon{
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     position: relative;
     transition: .1s;
-    margin: 10px 10px;
+    margin: 1rem 1rem;
     cursor: pointer;
-    display: inline-block; 
+    display: inline-block;
+    z-index: 15;
 }
 
 .menu__icon span{
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
+    width: .5rem;
+    height: .5rem;
+    background-color: #69CEF4;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -52,7 +57,7 @@ a:hover{
     top: 0;
   }
   .menu__icon span:nth-child(2){
-    left: 12px;
+    left: 1.2rem;
     top: 0;
   }
   .menu__icon span:nth-child(3){
@@ -61,29 +66,29 @@ a:hover{
   }
   .menu__icon span:nth-child(4){
     left: 0;
-    top: 12px;
+    top: 1.2rem;
   }
   .menu__icon span:nth-child(5){
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 1.2rem;
+    top: 1.2rem;
   }
   .menu__icon span:nth-child(6){
-    right: 0px;
-    top: 12px;
+    right: 0;
+    top: 1.2rem;
   }
   .menu__icon span:nth-child(7){
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
   }
   .menu__icon span:nth-child(8){
     position: absolute;
-    left: 12px;
-    bottom: 0px;
+    left: 1.2rem;
+    bottom: 0;
   }
   .menu__icon span:nth-child(9){
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
   }
   .menu__icon.open{
     transform: rotate(180deg);
@@ -96,20 +101,20 @@ a:hover{
     transition: .5s cubic-bezier(.8, .5, .2, 1.4);
   }
   .menu__icon.open span:nth-child(2) {
-    left: 6px;
-    top: 6px;
+    left: .6rem;
+    top: .6rem;
   }
   .menu__icon.open span:nth-child(4) {
-    left: 6px;
-    top: 18px;
+    left: .6rem;
+    top: 1.8rem;
   }
   .menu__icon.open span:nth-child(6) {
-    right: 6px;
-    top: 6px;
+    right: .6rem;
+    top: .6rem;
   }
   .menu__icon.open span:nth-child(8) {
-    left: 18px;
-    bottom: 6px;
+    left: 1.8rem;
+    bottom: .6rem;
   }
 
 
@@ -356,6 +361,10 @@ a:hover{
     .main {
         padding-left: 15.7rem;
     }
+
+    .burger{
+        display: none;
+    }
 }
 
 @media (max-width: 48em) {
@@ -372,8 +381,14 @@ a:hover{
         font-size: 2.7rem;
     }
 
+    header{
+        position: relative;
+        z-index: 10;
+    }
+
     .header__title{
         font-size: 4.8rem;
+        z-index: 15;
     }
 
     .page-portfolio{
@@ -381,12 +396,80 @@ a:hover{
         flex-direction: column;
     }
 
+    .burger{
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        /*height: 100%;*/
+        height: 100vh;
+        /*background-color: rgba(0,0,0,0.9);*/
+        background-color: #001F4B;
+        padding: 15rem 0 3rem 0;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .header__nav._active{
+        left: 0;
+    }
+
+    .header__nav-list{
+        padding-top: 10rem;
+        border-top: .1rem solid #69CEF4;
+    }
+
+    .header__item{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2.2rem;
+    }
+
+    .header__item .header__link{
+        font-size: 2.1rem;
+        width: 17.3rem;
+        height: 4.5rem;
+        border: 0.1rem solid #69CEF4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-mobile{
+        position: absolute;
+        bottom: -5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 10rem;
+        height: 10rem;
+    }
+
     .menu__wrapper{
         display: none;
     }
 
-    .menu{ order:1;}
-    .main{ order:0;}
+    .menu{
+        order:1;
+
+    }
+    .main{
+        order:0;
+        padding-top: 9.3rem;
+    }
+
+    .code__wrapper{
+        padding: 1rem;
+    }
+
+    .code .text{
+        font-size: 1.8rem;
+    }
 
 
     .footer .container{

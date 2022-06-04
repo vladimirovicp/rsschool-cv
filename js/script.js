@@ -2,7 +2,7 @@ let menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 let sections = document.querySelectorAll('section');
 
 if( menuLinks.length > 0){
-    console.log(menuLinks);
+    // console.log(menuLinks);
 
     menuLinks.forEach(menuLinks => {
         menuLinks.addEventListener("click", onMenuClick)
@@ -11,6 +11,18 @@ if( menuLinks.length > 0){
     function onMenuClick(e){
         const menuLink = e.target;
 
+        // console.log(menuLink);
+
+        menuLinks.forEach(menuLink => {
+            if (menuLink.classList.contains('active')) {
+                menuLink.classList.remove('active');
+            }
+        });
+
+        menuLink.classList.add('active');
+
+
+
         sections.forEach( value => {
             if (value.classList.contains('active'))
             {
@@ -18,11 +30,8 @@ if( menuLinks.length > 0){
             }
         });
 
-
-
-
-        console.log(menuLink);
-        console.log(' | ' + menuLink.dataset.goto + ' | ' + document.querySelector('.' + menuLink.dataset.goto));
+        // console.log(menuLink);
+        // console.log(' | ' + menuLink.dataset.goto + ' | ' + document.querySelector('.' + menuLink.dataset.goto));
 
         if(menuLink.dataset.goto && document.querySelector('.' + menuLink.dataset.goto)){
             const gotoBlock = document.querySelector('.' + menuLink.dataset.goto);
@@ -38,5 +47,7 @@ if( menuLinks.length > 0){
             e.preventDefault();
 
         }
+
+
     }
 }

@@ -161,6 +161,10 @@ a:hover{
     writing-mode: vertical-rl;
 }
 
+.menu__link.active{
+    color: #69CEF4
+}
+
 .main{
     padding-left: 15.7rem;
 }
@@ -213,4 +217,32 @@ a:hover{
 .footer{
     border-top: 3px solid rgba(105, 206, 244, 0.05);
     height: 6rem;
+}
+
+.footer .container{
+    padding: 1.4rem 0;
+}
+
+.footer__links{
+    display:  flex;
+}
+
+.footer__links li:not(:last-child){
+    margin-right: 3.2rem;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.git-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.rs-icon{
+    width: 8.3rem;
+    height: 3.3rem;
 }

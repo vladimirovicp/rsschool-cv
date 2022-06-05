@@ -460,13 +460,13 @@ code {
     .header__item{
         display: flex;
         justify-content: center;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
 
     .header__item .header__link{
-        font-size: 2.1rem;
-        width: 17.3rem;
-        height: 4.5rem;
+        font-size: 2.8rem;
+        width: 23rem;
+        height: 6rem;
         border: 0.1rem solid #69CEF4;
         display: flex;
         justify-content: center;

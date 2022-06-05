@@ -29,8 +29,8 @@ a:hover{
 /* https://codepen.io/ahmadbassamemran/pen/VQwPGr */
 
 .menu__icon{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     position: relative;
     transition: .1s;
     margin: 1rem 1rem;
@@ -40,8 +40,8 @@ a:hover{
 }
 
 .menu__icon span{
-    width: .5rem;
-    height: .5rem;
+    width: .8rem;
+    height: .8rem;
     background-color: #69CEF4;
     display: block;
     border-radius: 50%;
@@ -57,7 +57,7 @@ a:hover{
     top: 0;
   }
   .menu__icon span:nth-child(2){
-    left: 1.2rem;
+    left: 1.6rem;
     top: 0;
   }
   .menu__icon span:nth-child(3){
@@ -66,16 +66,16 @@ a:hover{
   }
   .menu__icon span:nth-child(4){
     left: 0;
-    top: 1.2rem;
+    top: 1.6rem;
   }
   .menu__icon span:nth-child(5){
     position: absolute;
-    left: 1.2rem;
-    top: 1.2rem;
+    left: 1.6rem;
+    top: 1.6rem;
   }
   .menu__icon span:nth-child(6){
     right: 0;
-    top: 1.2rem;
+    top: 1.6rem;
   }
   .menu__icon span:nth-child(7){
     left: 0;
@@ -83,7 +83,7 @@ a:hover{
   }
   .menu__icon span:nth-child(8){
     position: absolute;
-    left: 1.2rem;
+    left: 1.6rem;
     bottom: 0;
   }
   .menu__icon span:nth-child(9){
@@ -211,7 +211,7 @@ a:hover{
 .header__title{
     font-style: italic;
     font-weight: 500;
-    font-size: 4.8rem;
+    font-size: 2.4rem;
     line-height: 1.17;
     letter-spacing: 0.05em;
 
@@ -378,11 +378,12 @@ a:hover{
     }
 
     .title{
-        font-size: 2.7rem;
+        font-size: 3.6rem;
     }
 
     header{
         position: relative;
+        height: 20rem;
         z-index: 10;
     }
 
@@ -446,8 +447,8 @@ a:hover{
         bottom: -5rem;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 10rem;
-        height: 10rem;
+        width: 21.2rem;
+        height: 21.2rem;
     }
 
     .menu__wrapper{

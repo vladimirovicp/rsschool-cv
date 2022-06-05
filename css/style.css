@@ -23,6 +23,10 @@ a:hover{
     color: #69CEF4;
 }
 
+code {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* ----------------------------------------------- */
 
@@ -301,6 +305,15 @@ a:hover{
 
 }
 
+.code__wrapper pre{
+    display: flex;
+}
+
+.code__wrapper code{
+    display: flex;
+    margin: 0 auto;
+}
+
 .code .text{
     font-size: 1.6rem;
     line-height: 1.19;
@@ -372,8 +385,12 @@ a:hover{
         font-size: 1.5625vw;
     }
 
+    .disc li{
+        margin-left: 5rem;
+    }
+
     .container {
-        padding: 0 4rem;
+        padding: 0 2rem;
         width: 100%;
     }
 
@@ -384,6 +401,10 @@ a:hover{
 
     .text{
         font-size: 2.8rem;
+    }
+
+    section{
+        margin-bottom: 5rem;
     }
 
     .header{
@@ -479,7 +500,7 @@ a:hover{
     }
 
     .code .text{
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 
 
@@ -502,6 +523,21 @@ a:hover{
         width: 12.4rem;
         height: 4.95rem;
     }
+
+    .skills__list{
+        width: auto;
+    }
+
+    .skills__text{
+        font-size: 2.8rem;
+        margin-left: 2.8rem;
+    }
+
+    .skills__skill{
+        margin-bottom: 1.8rem;
+    }
+
+
 
 
 

@@ -64,12 +64,19 @@ if( menuLinksMob.length > 0) {
         document.querySelector('.header__nav').classList.toggle('_active');
         document.body.classList.toggle('_lock');
 
+        sections.forEach( value => {
+            if (value.classList.contains('active'))
+            {
+                value.classList.remove('active');
+            }
+        });
+
         const menuLinkMob = e.target;
         if(menuLinkMob.dataset.goto && document.querySelector('.' + menuLinkMob.dataset.goto)){
             const gotoBlockMob = document.querySelector('.' + menuLinkMob.dataset.goto);
             gotoBlockMob.classList.add('active');
 
-            // const gotoBlockValueMob = gotoBlockMob.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+
             const gotoBlockValueMob = gotoBlockMob.getBoundingClientRect().top + scrollY - 20;
             window.scrollTo({
                 top: gotoBlockValueMob,

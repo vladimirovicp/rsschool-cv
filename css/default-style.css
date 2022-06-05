@@ -123,9 +123,9 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-code,
-kbd,
-samp {
-    font-family: monospace, monospace;
-    font-size: inherit;
-}
+/*code,*/
+/*kbd,*/
+/*samp {*/
+/*    font-family: monospace, monospace;*/
+/*    font-size: inherit;*/
+/*}*/

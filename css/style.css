@@ -161,7 +161,6 @@ code {
 
 .container {
     width: 126.2rem;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 5rem 0 0;
     display: flex;
@@ -327,6 +326,10 @@ code {
 
 .contacts{
     margin-top: 4rem;
+}
+
+.projects a{
+    text-decoration: underline;
 }
 
 .footer{
